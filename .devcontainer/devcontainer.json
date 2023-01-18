@@ -1,13 +1,8 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/debian
 {
     "name": "Mr Coxall - Codespace Image",
-    // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": "bash ./.devcontainer/startup.sh",
     "customizations": {
-        // Configure properties specific to VS Code.
         "vscode": {
-            // Set *default* container specific settings.json values on container create.
             "settings": {
                 "editor.autoClosingQuotes": "always",
                 "editor.bracketPairColorization.enabled": true,
