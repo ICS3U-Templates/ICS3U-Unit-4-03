@@ -18,5 +18,5 @@
 
 **NOTES ON INITIAL LOAD for C/C++:**
 - ensure the C/C++ extension is loaded correctly (you might need to reload it)
-- when you run or debug a C/C++ program for the first time, the IDE will ask what compiler to use; select the 1st choice (C/C++: g++)
+- when you run or debug a C/C++ program for the first time, the IDE will ask what compiler to use; select the 1st choice (C/C++: gcc)
 - the IDE will place a task.json file in the .vscode directory
