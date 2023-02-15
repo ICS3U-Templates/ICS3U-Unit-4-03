@@ -21,7 +21,10 @@ FIRST_CHAR=$(head -c 1 ./README.md)
 if [ "$FIRST_CHAR" = "[" ]
 then
     cp ./.devcontainer/.bashrc ~/.bashrc
+    # install CPPLint
     sudo pip3 install cpplint
+    # binary will be $(go env GOPATH)/bin/golangci-lint
+    curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
     ex -s -c 1m3 -c w -c q ./README.md
     sed -i "3G" ./README.md
     sed -i "s/<OWNER>/$GITHUB_REPO_OWNER/g" ./README.md
